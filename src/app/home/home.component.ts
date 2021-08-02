@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         (val) => {return val > 0 }
       ),
       map((val: number) => {
-        return 'Round: ' + val
+        return 'Round: ' + (val + 1)
       })
     ).subscribe(
       val => console.log(val), 
