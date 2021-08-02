@@ -21,4 +21,8 @@ export class UserComponent implements OnInit {
       this.id = +params.id;
     });
   }
+
+  onActivate() {
+    this.userService.activatedEmitter.emit(true)
+  }
 }
